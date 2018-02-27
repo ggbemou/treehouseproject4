@@ -1,4 +1,4 @@
-$(".gallery").simplelightbox({
+$(".gallery a").simpleLightbox({
 
 		sourceAttr: 'href',
 		overlay: true,

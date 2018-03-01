@@ -28,6 +28,6 @@ $(".gallery a").simpleLightbox({
 
 $("document").ready(function(){
 	$("#search").simplelightbox({
-		attribut:"data-title"
+		attribute:"data-title"
 	});
 });

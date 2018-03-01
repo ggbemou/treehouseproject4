@@ -19,3 +19,15 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
+
+	$("document").ready(function(){
+
+  $(".gallery a").fadeIn();
+
+});
+
+$("document").ready(function(){
+	$("#search").simplelightbox({
+		attribut:"data-title"
+	});
+});

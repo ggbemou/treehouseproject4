@@ -20,17 +20,18 @@ $(".gallery a").simpleLightbox({
 		alertError: true,
 	});
 //added variables
-//var a;
-//function () {
-	//a=document.querySelectorAll(a"[alt]");
-	//input=document.getElementById('search');
- 	//filter=input.value.toUpperCase();
- 	//a=document.getElementByclass("gallery");
- 	//for (i=0; i<a.length; i++){
-		//a=document.getElementBytagName("a")[0];
- 		//if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){
- 			//a[1].style.display="";
- 		//} else{ a[1].style.display="none";
- 		//}
- 	//}
- //}
+var input;
+var a;
+function () {
+	a=document.querySelectorAll(a"[alt]");
+	input=document.getElementById('search');
+ 	filter=input.value.toUpperCase();
+ 	a=document.getElementByclass("gallery");
+ 	for (i=0; i<a.length; i++){
+		a=document.getElementBytagName("a")[0];
+ 		if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){
+ 			a[1].style.display="";
+ 		} else{ a[1].style.display="none";
+ 		}
+ 	}
+ }

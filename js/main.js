@@ -20,13 +20,18 @@ $(".gallery a").simpleLightbox({
 		alertError: true,
 	});
 //added variables
-var input;
-var a;
+//var input;
+//var a;
+//function
 function () {
+	//add getElementBid
 	a=document.querySelectorAll(a"[alt]");
+	//add input
 	input=document.getElementById('search');
  	filter=input.value.toUpperCase();
+	//get elementby gallery
  	a=document.getElementByclass("gallery");
+	//for loop
  	for (i=0; i<a.length; i++){
 		a=document.getElementBytagName("a")[0];
  		if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){

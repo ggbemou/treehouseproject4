@@ -19,7 +19,7 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
-<script>
+
 var input, filter,() => {
 	a=document.querySelectorAll(a"[alt]");
 	input=document.getElementByName('myInput');
@@ -33,4 +33,3 @@ var input, filter,() => {
 		}
 	}
 }
-</script>

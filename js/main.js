@@ -19,17 +19,18 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
-
-var input, filter,() => {
-	a=document.querySelectorAll(a"[alt]");
-	input=document.getElementByName('myInput');
-	filter=input.value.toUpperCase();
-	a=document.getElementByclass("gallery");
-	for (i=0; i<a.length; i++){
-		a=document.getElementBytagName("a")[0];
-		if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){
-			a[1].style.display="";
-		} else{ a[1].style.display="none";
-		}
-	}
-}
+//added variables
+//var a;
+//function () {
+	//a=document.querySelectorAll(a"[alt]");
+	//input=document.getElementById('search');
+ 	//filter=input.value.toUpperCase();
+ 	//a=document.getElementByclass("gallery");
+ 	//for (i=0; i<a.length; i++){
+		//a=document.getElementBytagName("a")[0];
+ 		//if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){
+ 			//a[1].style.display="";
+ 		//} else{ a[1].style.display="none";
+ 		//}
+ 	//}
+ //}

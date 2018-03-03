@@ -12,7 +12,12 @@
   justify-content:space-around;
   margin:0 auto;
 
+
 }
+html {
+  background-color: yellow;
+}
+
 
 img{
   margin:24px;
@@ -29,23 +34,23 @@ border-style: groove;
 color:green;
 }
 
-@media (max-width:800px) {
-  body{
+@media  (min-width: 400px){
+  body {
     background-color:blue;
   max-width: 0 auto;
   text-align: center;
 
 
   }
-  .container {
 
 
+.container{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
 
     flex-wrap:wrap;
     justify-content: space-around;
-    max-width:90%;
+    max-width:650px;
     width:42%;
 
   }

@@ -21,13 +21,13 @@ $(".gallery a").simpleLightbox({
 	});
 
 //declare variables
-var input, filter,a, caption;
+var input, filter, caption;
 input=document.getElementById("search");
 filter=input.value.toUpperCase();
 //for loop
 for (i=0; i<a.length; i++){
 	let caption=a[i].firstchild.getAttribute("alt")[0];
-	if (caption.toUpperCase().indexOf(filter)>-1 || $(a).data("alt")===filter.toLocalLowerCase()){
+	if (caption.toUpperCase().indexOf(filter)>-1 || $(a).captions("alt")===filter.toLocalLowerCase()){
 		a.style.display="";
 	} else {
 		a[i].style.display="none";

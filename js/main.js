@@ -19,24 +19,19 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
-//added variables
-//var input;
-//var a;
-//function
-function () {
-	//add getElementBid
-	a=document.querySelectorAll(a"[alt]");
-	//add input
-	input=document.getElementById('search');
- 	filter=input.value.toUpperCase();
-	//get elementby gallery
- 	a=document.getElementByclass("gallery");
-	//for loop
- 	for (i=0; i<a.length; i++){
-		a=document.getElementBytagName("a")[0];
- 		if (a.InnerHtml.toUpperCase().indexOf(filter))>-1 || $(a.data("alt"))===filter.toLocalLowerCase()){
- 			a[1].style.display="";
- 		} else{ a[1].style.display="none";
- 		}
- 	}
- }
+
+//declare variables
+var input, filter,a, caption;
+input=document.getElementById("search");
+filter=input.value.toUpperCase();
+//for loop
+for (i=0; i<a.length; i++){
+	let caption=a[i].firstchild.getAttribute("alt")[0];
+	if (caption.toUpperCase().indexOf(filter)>-1 || $(a).data("alt")===filter.toLocalLowerCase()){
+		a.style.display="";
+	} else {
+		a[i].style.display="none";
+	}
+	}
+
+};

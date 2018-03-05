@@ -21,10 +21,10 @@ $(".gallery a").simpleLightbox({
 	});
 
 //declare variables
-var input, filter, caption;
+var input, filter, caption, a;
 input=document.getElementById("search");
 filter=input.value.toUpperCase();
-//for loop
+$("#search").on("keyup", function(){
 for (i=0; i<a.length; i++){
 	let caption=a[i].firstchild.getAttribute("alt")[0];
 	if (caption.toUpperCase().indexOf(filter)>-1 || $(a).data("alt")===filter.toLocalLowerCase()){
@@ -33,5 +33,4 @@ for (i=0; i<a.length; i++){
 		a[i].style.display="none";
 	}
 	}
-
-}
+});

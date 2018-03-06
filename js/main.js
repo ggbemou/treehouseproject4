@@ -19,7 +19,7 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
-
+//having hardtime getting this one right
 //declare variables
 var input, filter, caption, a;
 input=document.getElementById("search");

@@ -1,5 +1,5 @@
+//plugins code
 $(".gallery a").simpleLightbox({
-
 		sourceAttr: 'href',
 		overlay: true,
 		spinner: true,
@@ -19,17 +19,23 @@ $(".gallery a").simpleLightbox({
 		docClose: true,
 		alertError: true,
 	});
-//having hardtime getting this one right
+//search bar for loop
 //declare variables
 var input, filter, caption, a;
+//will search document by ID
 input=document.getElementById("search");
-
+//will search document by tagName
  a=document.getElementsByTagName("a");
+ //keyup event
 $("#search").on("keyup", function(){
+	//for loop
 for (i=0; i<a.length; i++){
+	//case sensitive
 	filter=input.value.toLowerCase();
  caption=a[i].firstChild.getAttribute("alt")[0];
+ //condition
 	if (caption.indexOf(filter)>-1){
+		//conditional statement
 		a[i].style.display="";
 	} else {
 		a[i].style.display="none";
